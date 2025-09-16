@@ -6,7 +6,7 @@ from tqdm import tqdm
 
 
 input_dir = r'..\MMWHS\Train\img_frame'
-output_dir = r'..MMWHS\Train\img_sample'
+output_dir = r'..\MMWHS\Train\img_sample'
 
 
 
@@ -49,3 +49,4 @@ for fname in tqdm(os.listdir(input_dir)):
     sitk.WriteImage(img_resampled, output_path)
 
 print(f"\n  {target_spacing} save at{output_dir}")
+
